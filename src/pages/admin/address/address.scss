@@ -1,0 +1,101 @@
+.table {
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+
+        .image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .status {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Approved {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+        }
+        &.Pending {
+            color: goldenrod;
+            background-color: rgba(189, 189, 3, 0.103);
+        }
+    }
+}
+// styles.scss
+
+.trangthai-sd {
+    border: 1px solid green;
+    background-color: lightgreen;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.trangthai-ksd {
+    border: 1px solid rgb(230, 13, 13);
+    background-color: rgb(243, 87, 87);
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    pointer-events: none;
+}
+.bold-table {
+    th,
+    td {
+        font-weight: bold;
+    }
+}
+.title-address {
+    display: flex;
+    align-items: center;
+}
+.action-buttons {
+    border-radius: 20px;
+    display: flex;
+    // justify-content: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.pagination li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 30%;
+    transition: background-color 0.3s ease;
+}
+
+.pagination li.active a {
+    background-color: rgb(68, 68, 247);
+    color: #fff;
+}
+
+.pagination li a:hover {
+    background-color: #f0f0f0;
+}

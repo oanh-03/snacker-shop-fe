@@ -1,0 +1,30 @@
+.layout-employee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    height: 10%; 
+    /* height: 80px;  */
+    margin-bottom: 5%;
+    margin-top: 20%; 
+
+    transition: all 0.2s; 
+}
+  
+.logo-content {
+    height: 100%; 
+    object-fit: contain; 
+}
+  
+.ant-layout-sider-collapsed .logo {
+    height: 70px; 
+}
